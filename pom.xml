@@ -5,7 +5,7 @@
 	<groupId>com.mt</groupId>
 	<artifactId>maven-web-application</artifactId>
 	<packaging>war</packaging>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1-SNAPSHOT</version> 
 	
 	<name>maven-web-application</name>
 
@@ -29,8 +29,22 @@
 		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
 
 	</properties>
+	
+	<repositories>
+	    <repository>
+		<id>nexus</id>
+		<name>kirandevops -remote repo</name>
+		<url>http://13.232.254.65:2496/kirandevops/repository/remote-repo/</url>
+		</repository>
+	</repositories>
 
 	<dependencies>
+		<dependency>
+  <groupId>com.mss</groupId>
+  <artifactId>mail</artifactId>
+  <version>1.0.0</version>
+           </dependency>
+
 		
 		<dependency>
 			<groupId>org.json</groupId>
